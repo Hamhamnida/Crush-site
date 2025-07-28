@@ -2,7 +2,7 @@ var button1 = document.getElementById("no");
 var button2 = document.getElementById("maybe");
 var button3 = document.getElementById("yes");
 
-button1.addEventListener("click", function() {
+button1.addEventListener("mouseover", function() {
     var randomX = Math.floor(Math.random() * (window.innerWidth - this.offsetWidth));
     var randomY = Math.floor(Math.random() * (window.innerHeight - this.offsetHeight));
     this.style.position = "absolute";
@@ -17,7 +17,7 @@ button1.addEventListener("click", function() {
         this.style.top = hoverY + "px";
     });
 });
-button2.addEventListener("click", function() {
+button2.addEventListener("mouseover", function() {
     var randomX = Math.floor(Math.random() * (window.innerWidth - this.offsetWidth));
     var randomY = Math.floor(Math.random() * (window.innerHeight - this.offsetHeight));
     this.style.position = "absolute";
